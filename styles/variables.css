@@ -1,1 +1,46 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Typography */
+  --main-font: Inter-Variable;
+  --accent-font: PressStart2P;
+  --main-font-weight: 400;
+  --header-font-weight: 700;
+  --main-font-size: 18px;
+  /* Colors */
+  --background-color: #fff;
+  --main-color: #000;
+  --contour-color: #000;
+  --animation-fill-color: #f00;
+  --animation-accent-color: #000;
+  /* Paddings */
+  --heading-block-padding: 3px;
+  --heading-inline-padding: 10px;
+  --card-content-padding: 25px;
+  --card-description-gap: 27px;
+  /* Miscellaneous */
+  --main-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --save-button-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  --border-size: 2px;
+  --background: 
+  repeating-linear-gradient(
+    to right,
+    #d3d3d3 0 2px,
+    #d3d3d300 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0 2px,
+    #d3d3d300 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #e7e7e7,
+    #1a1a1a
+  );
+}
+
+@media (width <= 480px) {
+  :root {
+    --main-inline-size: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+.card {
+  background-color: var(--background-color);
+  border: solid var(--main-color) var(--border-size);
+}
+
+.card__heading {
+  padding-inline: var(--heading-inline-padding);
+  padding-block: var(--heading-block-padding);
+  font-variation-settings: 'wght' var(--header-font-weight);
+  font-size: var(--main-font-size);
+}
+
+.card__image-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__watermark {
+  pointer-events: none;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  content: '</HTML>';
+  position: absolute;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
+  mix-blend-mode: hard-light;
+  opacity: 50%;
+  text-shadow:
+    -1px 0 var(--background-color), 
+    0 1px var(--background-color), 
+    1px 0 var(--background-color), 
+    0 -1px var(--background-color);
+}
+
+@supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+  .card__watermark {
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
+    text-shadow: none;
+  }
+} 
+
+.card__image {
+  inline-size: calc(100% + var(--border-size) * 2);
+  object-position: center;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: var(--card-content-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-content-padding);
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-description-gap);
+  line-height: 21px;
+}
+
+.card__like-buttons {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  block-size: 100%;
+  aspect-ratio: 1 / 1;
+  border: solid var(--border-size) transparent;
+  transition: border-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: solid var(--border-size) var(--main-color);
+}
+
+.card__like-button {
+  padding-block: 12.5px;
+  inline-size: 130px;
+}

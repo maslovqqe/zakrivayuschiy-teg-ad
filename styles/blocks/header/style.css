@@ -1,0 +1,18 @@
+.header {
+  font-family: var(--accent-font), sans-serif;
+  text-align: center;
+  padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  margin-block: 100px;
+  background-color: var(--background-color);
+  border: solid var(--main-color) var(--border-size);
+}
+
+.header__logo {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-block-end: 20px;
+}
+
+.header__heading {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
+}

@@ -1,0 +1,27 @@
+.unsaturated {
+  filter: saturate(30%);
+}
+
+.saturated {
+  filter: saturate(180%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(80deg);
+}
+
+.negative {
+  filter: invert(70%);
+}
+
+.grayscale_hue-rotate {
+  filter: hue-rotate(-40deg) grayscale(80%);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.sepia {
+  filter: sepia(90%);
+}

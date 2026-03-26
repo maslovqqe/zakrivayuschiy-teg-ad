@@ -21,7 +21,8 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -40,6 +41,18 @@ input {
 ul,
 ol {
   list-style: none;
+}
+
+picture {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
 }
 
 .visually-hidden {

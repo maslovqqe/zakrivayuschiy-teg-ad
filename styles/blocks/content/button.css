@@ -1,0 +1,54 @@
+.button {
+  font-family: var(--accent-font), sans-serif;
+  line-height: 90%;
+  font-size: 14px;
+  padding: 0;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.button::after {
+  content: '';
+  block-size: calc(100% + 2px);
+  inline-size: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  inset: 0;
+}
+
+.button:hover::after {
+  transform: scaleX(1);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--main-color);
+}
+
+.button__text {
+  position: relative;
+  color: var(--background-color);
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+.save-button {
+  background-color: var(--background-color);
+  padding: 15px;
+  inline-size: var(--save-button-inline-size);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.save-button__icon {
+  position: relative;
+  z-index: 1;
+  fill: var(--background-color);
+  mix-blend-mode: difference;
+  block-size: 21px;
+}
