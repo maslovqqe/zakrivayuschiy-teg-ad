@@ -452,7 +452,7 @@
       <button 
         class="save-button button"
         type="button"
-        onclick="document.getElementById('save-dialog').showModal()" 
+        onclick="window['dialog'].showModal()" 
         aria-controls="save-dialog"
       >
         <svg class="save-button__icon floppy-icon" fill="white" viewBox="0 0 39 39">
@@ -461,7 +461,7 @@
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
-    <dialog class="save-dialog" id="save-dialog">
+    <dialog class="save-dialog" id="dialog">
       <svg class="save-dialog__icon floppy-icon" viewBox="0 0 39 39">
         <use href="./svg/floppy.svg#floppy" />
       </svg>
@@ -469,7 +469,7 @@
       <button
         class="save-dialog__close button"
         type="button"
-        onclick="document.getElementById('save-dialog').close();"
+        onclick="window['dialog'].close();"
       >
         <span class="button__text">OK</span>
       </button>
