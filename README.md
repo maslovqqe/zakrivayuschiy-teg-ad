@@ -1,1 +1,1 @@
-https://maslovqqe.github.io/zakrivayuschiy-teg-ad/
+https://github.com/maslovqqe/zakrivayuschiy-teg-ad
