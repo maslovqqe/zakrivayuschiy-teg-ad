@@ -22,8 +22,6 @@
 
 .save-dialog__icon {
   inline-size: 39px;
-  fill: var(--background-color);
-  mix-blend-mode: difference;
 }
 
 .save-dialog__caption {

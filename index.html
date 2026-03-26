@@ -30,7 +30,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image"/>
+            <img src="./images/vehicle.png" class="card__image" />
           </picture>
           <figcaption class="card__watermark">&lt;/HTML&gt;</figcaption>
         </figure>
@@ -82,7 +82,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image unsaturated"/>
+            <img src="./images/vehicle.png" loading="lazy" class="card__image unsaturated" />
           </picture>
           <figcaption class="card__watermark">&lt;/HTML&gt;</figcaption>
         </figure>
@@ -136,7 +136,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image saturated"/>
+            <img src="./images/vehicle.png" loading="lazy" class="card__image saturated" />
           </picture>
           <figcaption class="card__watermark">&lt;CSS&gt;</figcaption>
         </figure>
@@ -188,7 +188,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image hue-rotate"/>
+            <img src="./images/vehicle.png" loading="lazy" class="card__image hue-rotate" />
           </picture>
           <figcaption class="card__watermark">&lt;/decisions&gt;</figcaption>
         </figure>
@@ -241,7 +241,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image negative"/>
+            <img src="./images/vehicle.png" loading="lazy" class="card__image negative" />
           </picture>
           <figcaption class="card__watermark">care</figcaption>
         </figure>
@@ -295,7 +295,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image grayscale_hue-rotate"/>
+            <img src="./images/vehicle.png" loading="lazy" class="card__image grayscale_hue-rotate"/>
           </picture>
           <figcaption class="card__watermark">&lt;support&gt;</figcaption>
         </figure>
@@ -347,7 +347,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image blur"/>
+            <img src="./images/vehicle.png" loading="lazy" class="card__image blur" />
           </picture>
           <figcaption class="card__watermark">&lt;lifestyle: none;&gt;</figcaption>
         </figure>
@@ -400,7 +400,7 @@
         <figure class="card__image-container">
           <picture class="card__image-container">
             <source srcset="./images/vehicle-desktop.png" media="(min-width: 480px)" type="image/png" />
-            <img src="./images/vehicle.png" class="card__image sepia"/>
+            <img src="./images/vehicle.png" loading="lazy" class="card__image sepia" />
           </picture>
           <figcaption class="card__watermark">&lt;expirience&gt;</figcaption>
         </figure>
@@ -454,14 +454,14 @@
         onclick="window['save-dialog'].showModal()" 
         aria-controls="save-dialog"
       >
-        <svg class="save-button__icon" fill="white" viewBox="0 0 39 39">
+        <svg class="save-button__icon floppy-icon" fill="white" viewBox="0 0 39 39">
           <use href="./images/floppy.svg#floppy" />
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
     <dialog class="save-dialog" id="save-dialog">
-      <svg class="save-dialog__icon" viewBox="0 0 39 39">
+      <svg class="save-dialog__icon floppy-icon" viewBox="0 0 39 39">
         <use href="./images/floppy.svg#floppy" />
       </svg>
       <p class="save-dialog__caption">Вставьте дискету, чтобы продолжить</p>

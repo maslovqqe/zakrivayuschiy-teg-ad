@@ -16,3 +16,10 @@
 .main-size {
   inline-size: var(--main-inline-size);
 }
+
+.floppy-icon {
+  position: relative;
+  z-index: 1;
+  fill: var(--background-color);
+  mix-blend-mode: difference;
+}

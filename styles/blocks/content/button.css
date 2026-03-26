@@ -46,10 +46,6 @@
 }
 
 .save-button__icon {
-  position: relative;
-  z-index: 1;
-  fill: var(--background-color);
-  mix-blend-mode: difference;
   block-size: 21px;
 }
 
