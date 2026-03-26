@@ -17,6 +17,8 @@
   --heading-inline-padding: 10px;
   --card-content-padding: 25px;
   --card-description-gap: 27px;
+  --watermark-block-inset: 25px;
+  --watermark-inline-inset: 25px;
   /* Miscellaneous */
   --main-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --save-button-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
@@ -42,5 +44,7 @@
 @media (width <= 480px) {
   :root {
     --main-inline-size: 100%;
+    --watermark-inline-inset: 13px;
+    --heading-block-padding: 3.5px 5.5px;
   }
 }

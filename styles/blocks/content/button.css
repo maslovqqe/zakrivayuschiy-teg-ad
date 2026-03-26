@@ -52,3 +52,12 @@
   mix-blend-mode: difference;
   block-size: 21px;
 }
+
+@media (width <= 480px) {
+  .save-button {
+    flex-direction: column;
+  }
+  .save-button__icon {
+    block-size: 28px;
+  }
+}

@@ -8,6 +8,7 @@
   padding-block: var(--heading-block-padding);
   font-variation-settings: 'wght' var(--header-font-weight);
   font-size: var(--main-font-size);
+  border-block: solid var(--border-size) transparent;
 }
 
 .card__image-container {
@@ -23,8 +24,8 @@
   font-size: 14px;
   content: '</HTML>';
   position: absolute;
-  inset-block-start: 25px;
-  inset-inline-end: 25px;
+  inset-block-start: var(--watermark-block-inset);
+  inset-inline-end: var(--watermark-inline-inset);
   mix-blend-mode: hard-light;
   opacity: 50%;
   text-shadow:
@@ -67,7 +68,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
+  block-size: 38px;
 }
 
 .card__icon-button {
@@ -91,6 +93,6 @@
 }
 
 .card__like-button {
-  padding-block: 12.5px;
+  block-size: 100%;
   inline-size: 130px;
 }
